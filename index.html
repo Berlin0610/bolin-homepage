@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolin Chen — Homepage</title>
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20260817">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <filter id="sketchy" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="turbulence" baseFrequency="0.035 0.042" numOctaves="4" result="noise" seed="42"></feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    </filter>
+    <filter id="sketchy-sm" x="-18%" y="-18%" width="136%" height="136%">
+      <feTurbulence type="turbulence" baseFrequency="0.06" numOctaves="3" result="noise" seed="7"></feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    </filter>
+  </defs>
+</svg>
+
+<nav class="topnav">
+  <span class="nav-name">Bolin Chen</span>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="#publications">Publications</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#service">Service</a>
+  
+  <label class="theme-switch" title="Toggle light / dark">
+    <input class="theme-switch__checkbox" type="checkbox" aria-label="Toggle dark mode" />
+    <div class="theme-switch__container">
+      <div class="theme-switch__clouds"></div>
+      <div class="theme-switch__stars-container">
+        <svg fill="none" viewBox="0 0 144 55" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="theme-switch__circle-container">
+        <div class="theme-switch__sun-moon-container">
+          <div class="theme-switch__moon">
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-switch__shooting-star"></div>
+      <div class="theme-switch__shooting-star-2"></div>
+      <div class="theme-switch__meteor"></div>
+      <div class="theme-switch__stars-cluster">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <div class="theme-switch__aurora"></div>
+      <div class="theme-switch__comets">
+        <div class="comet"></div>
+        <div class="comet"></div>
+      </div>
+    </div>
+  </label>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-matrix" aria-hidden="true"></div>
+  <img src="assets/images/BolinChen.JPG" alt="Bolin Chen" class="hero-photo">
+  <div class="hero-info">
+    <h1><span class="author-name">Bolin Chen (陈柏林)</span></h1>
+    <p>
+      Senior Algorithm Engineer@Alibaba DAMO Academy<br>
+      Joint Postdoctoral Fellow@Alibaba DAMO Academy & Fudan University
+    </p>
+    <p class="socials">
+      <a target="_blank" href="https://scholar.google.com/citations?user=Z30kLzgAAAAJ" title="Google Scholar"><img src="assets/images/google_scholar_logo.svg" height="26" alt="Scholar"></a>
+      <a target="_blank" href="https://github.com/Berlin0610" title="GitHub"><img src="assets/images/github_logo.svg" height="27" alt="GitHub"></a>
+      <a target="_blank" href="mailto:bolinchen3-c@my.cityu.edu.hk" title="Email"><img src="assets/images/email_logo.svg" height="25" alt="Email"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/bolin-chen-695245200/?locale=zh" title="LinkedIn"><img src="assets/images/linkedin_logo.svg" height="26" alt="LinkedIn"></a>
+
+    </p>
+  </div>
+</section>
+
+
+<section id="about">
+  <h2>About</h2>
+	<p>
+	  I received my Ph.D. in Computer Science from
+	  <a target="_blank" href="https://www.cityu.edu.hk/">City University of Hong Kong</a>
+	  in February 2025. In March 2025, I joined
+	  <a target="_blank" href="https://damo.alibaba.com/">Alibaba DAMO Academy</a>
+	  as a Senior Algorithm Engineer and started a Joint Postdoctoral Fellow at
+	  <a target="_blank" href="https://www.fudan.edu.cn/">Fudan University</a>.
+	</p>
+	<p>
+	  My Ph.D. research centered on video coding and standardization, resulting in 30+ publications,
+	  50+ technical MPEG/JVET proposals, and 70+ US/CN/PCT patents. Since then, my research
+	  has broadened to frontier 3D vision and its practical deployment.
+	</p>
+  
+<h3>Research Interests</h3>
+<ul>
+  <li><b>3D Vision Research and Productization.</b> 3D reconstruction, generation, and deployment.</li>
+  <li><b>Generative Visual Compression.</b> Compression for image, video, and visual content with generative methods.</li>
+  <li><b>Ultra-Low-Bitrate Avatar Coding.</b> Efficient representation of talking faces and human avatars.</li>
+  <li><b>Perception-aware Visual Computing.</b> Perceptual quality assessment, human-centric image/video processing, and generative media detection.</li>
+</ul>
+</section>
+
+
+<section id="news">
+  <h2>News</h2>
+  <div class="news-scroll">
+    <ul class="news-list">
+      <li><span class="news-date">Dec. 2026</span> — Invited to give a Khronos Talk at SIGGRAPH Asia 2026.</li>
+      <li><span class="news-date">Sep. 2026</span> — Invited to present at IEEE MMSP 2026 Thematic School.</li>
+      <li><span class="news-date">Dec. 2024</span> — Successfully defended Ph.D. thesis at City University of Hong Kong.</li>
+    </ul>
+  </div>
+</section>
+
+
+<section id="publications">
+  <h2>Publications</h2>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="papers">Papers</button>
+    <button class="tab-btn" data-tab="proposals">Standards Proposals</button>
+    <button class="tab-btn" data-tab="patents">Patents</button>
+  </div>
+
+    <div class="tab-panel active" id="panel-papers">
+    <p style="color:var(--text-muted); font-size:0.9em;">
+      <b>30+</b> peer-reviewed papers. <a class="btn-full-list" href="full-papers.html">📄 Full Paper List →</a> </br>
+	  Selected published papers are listed below.
+    </p>
+    
+
+    <h3>First-Author Papers</h3>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Standardizing%20Generative%20Face%20Video%20Compression%20using%20Supplemental%20Enhancement%20Information">Standardizing Generative Face Video Compression using Supplemental Enhancement Information</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, Y. Ye, J. Chen, R. Liao, S. Yin, S. Wang, K. Yang, Y. Li, Y. Xu, Y.-K. Wang, S. Gehlot, G.M. Su, P. Yin, S. McCarthy, G.J. Sullivan. <span class="pub-venue">IEEE Transactions on Multimedia</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Interactive%20Face%20Video%20Coding%3A%20A%20Generative%20Compression%20Framework">Interactive Face Video Coding: A Generative Compression Framework</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, S. Wang, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compact%20Temporal%20Trajectory%20Representation%20for%20Talking%20Face%20Video%20Compression">Compact Temporal Trajectory Representation for Talking Face Video Compression</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology</span> <span class="badge badge-ccfb">CCF-B</span></span>
+      </li>	  
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Beyond%20keypoint%20coding%3A%20Temporal%20evolution%20inference%20with%20compact%20feature%20representation%20for%20talking%20face%20video%20compression">Beyond keypoint coding: Temporal evolution inference with compact feature representation for talking face video compression</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, R. Lin, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Multipath%20feature%20recalibration%20DenseNet%20for%20image%20classification">Multipath feature recalibration DenseNet for image classification</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, T. Zhao, J. Liu, L. Lin. <span class="pub-venue">International Journal of Machine Learning and Cybernetics</span> <span class="badge badge-sci">SCI</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Face%20Video%20Coding%20Techniques%20and%20Standardization%20Efforts%3A%20A%20Review">Generative Face Video Coding Techniques and Standardization Efforts: A Review</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, J. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral, Capocelli Prize finalist</span></span>
+      </li>	  	  
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Visual%20Compression%3A%20A%20Review">Generative Visual Compression: A Review</a>
+        <span class="pub-authors"><span class="author-self">B. Chen</span>, S. Yin, P. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE International Conference on Image Processing (ICIP)</span> <span class="badge badge-ccfc">CCF-C</span> <span class="badge badge-first">Oral</span></span>
+      </li>	  
+    </ul>
+
+    <h3>Co-Author Papers</h3>
+    <ul class="pub-list">
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Ultra-Low%20Bitrate%20Face%20Video%20Compression%20Based%20on%20Conversions%20from%203D%20Keypoints%20to%202D%20Motion%20Map">Ultra-Low Bitrate Face Video Compression Based on Conversions from 3D Keypoints to 2D Motion Map</a>
+        <span class="pub-authors">Z. Wang, <span class="author-self">B. Chen</span>, S. Wang, S. Wang, Y. Ye, S. Ma. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=FTGID%3A%20Fine-grained%20Text-driven%20Framework%20for%20Universal%20Generative%20Image%20Detection">FTGID: Fine-grained Text-driven Framework for Universal Generative Image Detection</a>
+        <span class="pub-authors">Z. Huang, L. Lin, <span class="author-self">B. Chen</span>, Y. Wang, T. Zhao. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Perceptual%20Quality%20Assessment%20of%20Face%20Video%20Compression%3A%20A%20Benchmark%20and%20An%20Effective%20Method">Perceptual Quality Assessment of Face Video Compression: A Benchmark and An Effective Method</a>
+        <span class="pub-authors">Y. Li, <span class="author-self">B. Chen</span>, B. Chen, M. Wang, S. Wang, W. Lin. <span class="pub-venue">IEEE Transactions on Multimedia</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=ColorAssist%3A%20Perception-Based%20Recoloring%20for%20Color%20Vision%20Deficiency%20Compensation">ColorAssist: Perception-Based Recoloring for Color Vision Deficiency Compensation</a>
+        <span class="pub-authors">L. Lin, S. Xie, Y. Wang, <span class="author-self">B. Chen</span>, Y. Xue, X. Zhuang, T. Zhao. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+      <li class="pub-item">
+        <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=DeepSVC%3A%20Deep%20Scalable%20Video%20Coding%20for%20Both%20Machine%20and%20Human%20Vision">DeepSVC: Deep Scalable Video Coding for Both Machine and Human Vision</a>
+        <span class="pub-authors">H. Lin, <span class="author-self">B. Chen</span>, Z. Zhang, J. Lin, X. Wang, T. Zhao. <span class="pub-venue">ACM International Conference on Multimedia (ACM MM)</span> <span class="badge badge-ccfa">CCF-A</span></span>
+      </li>
+    </ul>
+  </div><div class="tab-panel" id="panel-proposals">
+    <p style="color:var(--text-muted); font-size:0.9em;">
+      <b>50+</b> technical proposals contributed to JVET and MPEG. <a class="btn-full-list" href="full-proposals.html">📄 Full Proposal List →</a> </br>
+      Selected first-author adopted proposals are listed below.
+    </p>
+
+    <h3>First-Author Adopted Proposals</h3>
+    <ul class="prop-list">
+      <li class="prop-item">
+        <span class="prop-id">JVET-AQ0140</span>
+        <span class="prop-title">AHG9: A showcase for picture quality indication in EOI SEI message extension</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">MPEG m74027</span>
+        <span class="prop-title">[GSC] Dual-Phase Morton Spatial Sorting for Efficient Mapping of GS Attribute Parameters to 2D Pixel Space</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AJ0207</span>
+        <span class="prop-title">AHG9/AHG16: Performance results and suggestions on generative face video SEI message</span>
+        <span class="badge badge-adopt">Adopted, Working Draft</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AJ0209</span>
+        <span class="prop-title">AHG9/AHG16: Performance results of generative face video SEI message on high-resolution sequences</span>
+        <span class="badge badge-adopt">Adopted, CTC</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AI0048</span>
+        <span class="prop-title">AhG16: Improving GFVC Performance with Diverse Training Data</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AI0195</span>
+        <span class="prop-title">AhG9/16: Updates on GFVC common software tools and GFV SEI message</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AH0110</span>
+        <span class="prop-title">AHG16: Scalable Representation and Layered Reconstruction for Generative Face Video Compression</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AH0114</span>
+        <span class="prop-title">AHG16: Updated Common Software Tools for Generative Face Video Compression</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+      <li class="prop-item">
+        <span class="prop-id">JVET-AG0042</span>
+        <span class="prop-title">AHG16: Proposed Common Software Tools and Testing Conditions for Generative Face Video Compression</span>
+        <span class="badge badge-adopt">Adopted</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tab-panel" id="panel-patents">
+    <p style="color:var(--text-muted); font-size:0.9em;">
+      <b>70+</b> pending US/CN/PCT patents (<b>10+</b> granted). Selected granted patents are listed below.
+    </p>
+    <ul class="honor-list">
+      <li>Method and apparatuses for using face video generative compression SEI message. <b>US12621492B2</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>SEI message for generative face video. <b>US12621494B2</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>Method and apparatus for talking face video compression. <b>US12470746B2</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>Model training method, video encoding method and decoding method. <b>CN114897189B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>Video encoding method, decoding method, electronic device and storage medium. <b>CN114979672B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>A face video encoding method, decoding method and apparatus. <b>CN114401406B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>A face video encoding method, decoding method and apparatus. <b>CN114422795B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>Face video encoding method, decoding method and apparatus. <b>CN114205585B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>Keypoints based video compression. <b>US12477120B2</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>A kind of leucocyte extraction and classification method based on improvement K-means and convolutional neural networks. <b>CN110110807B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>An optimized segmentation method for ambiguous pixels based on improved FCN and DenseNet. <b>CN112541926B</b> <span class="badge badge-adopt">Granted</span></li>
+      <li>An objective video quality evaluation method based on observable coding effect strength. <b>CN111711816B</b> <span class="badge badge-adopt">Granted</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <ul class="edu-list">
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">Alibaba</div>
+        <div class="edu-main">
+          <b>Alibaba Group, DAMO Academy</b> · Senior Algorithm Engineer<br>
+        </div>
+      </div>
+      <div class="edu-date">Mar. 2025 – Present</div>
+    </li>
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">FDU</div>
+        <div class="edu-main">
+          <b>Fudan University &amp; Alibaba DAMO Academy</b> · Joint Postdoctoral Fellow<br>
+          Generative Visual Compression and Standardization
+        </div>
+      </div>
+      <div class="edu-date">Mar. 2025 – Present</div>
+    </li>
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">Alibaba</div>
+        <div class="edu-main">
+          <b>Alibaba Group, DAMO Academy</b> · Research Intern<br>
+        </div>
+      </div>
+      <div class="edu-date"> May. 2021 – Mar. 2025</div>
+    </li>	
+	
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">CityUHK</div>
+        <div class="edu-main">
+          <b>City University of Hong Kong</b> · Postdoctoral Fellow <br>
+          Department of Computer Science
+        </div>
+      </div>
+      <div class="edu-date">Feb. 2025 – Mar. 2025</div>
+    </li>
+	
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">CityUSZ</div>
+        <div class="edu-main">
+          <b>City University of Hong Kong</b> · Research Assistant<br>
+          Shenzhen Research Institute
+        </div>
+      </div>
+      <div class="edu-date">Dec. 2020 – Mar. 2021</div>
+    </li>
+
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">FZU</div>
+        <div class="edu-main">
+          <b>Fuzhou University</b> · Research Assistant<br>
+		  College of Physics and Information Engineering
+        </div>
+      </div>
+      <div class="edu-date">Seq. 2020 – Nov. 2020</div>
+    </li>
+	
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="edu-list">
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">CityUHK</div>
+        <div class="edu-main">
+          <b>City University of Hong Kong</b> · Ph.D. in Computer Science<br>
+          Advisor: Prof. Shiqi Wang <br>
+		  Research: Video Compression, Generation and Quality Assessment
+        </div>
+      </div>
+      <div class="edu-date">Apr. 2021 – Feb. 2025</div>
+    </li>
+    <li class="edu-item">
+      <div class="edu-left">
+        <div class="edu-logo-text">FZU</div>
+        <div class="edu-main">
+          <b>Fuzhou University</b> · B.Eng. in Communication Engineering<br>
+          Advisor: Prof. Tiesong Zhao & Prof. Liqun Lin <br>
+		  Research: Video Quality Assessment and Image Classification/Segmentation
+        </div>
+      </div>
+      <div class="edu-date">Sep. 2016 – Jun. 2020</div>
+    </li>
+  </ul>
+</section>
+
+<section id="service">
+  <h2>Professional Services</h2>
+
+  <div class="service-grid">
+    <div>
+      <h3>Area Chair / Committee</h3>
+      <ul>
+        <li>IEEE International Symposium on Circuits and Systems (ISCAS)</li>
+        <li>2026 IEEE International Conference on Multimedia and Expo (ICME 2026)</li>
+      </ul>
+
+      <h3>Invited Talks</h3>
+      <ul>
+        <li>
+          <b>SIGGRAPH Asia 2026</b> (Khronos Talk) —
+          <i>Efficient 3D Gaussian Compression for Head and Human Avatars</i>
+        </li>
+        <li>
+          <b>IEEE MMSP 2026</b> (Thematic School) —
+          <i>
+            Exploration and Standardization of Generative Face Video Compression:
+            From Compact Representation to Unified Syntax
+          </i>
+        </li>
+      </ul>
+
+      <h3>Organized Activities</h3>
+      <ul>
+        <li>
+          <b>ICME 2026</b> Special Session —
+          <i>Advances in Next-Generation Video Coding</i>
+        </li>
+        <li>
+          <b>VCIP 2026</b> Special Session —
+          <i>Advances in Next-Generation Video Coding</i>
+        </li>
+      </ul>
+
+      <h3>Reviewer</h3>
+      <ul>
+        <li>IEEE Transactions on Image Processing (TIP)</li>
+        <li>IEEE Transactions on Multimedia (TMM)</li>
+        <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
+        <li>IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS)</li>
+        <li>Knowledge-Based Systems (KBS)</li>
+        <li>ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM)</li>
+        <li>IEEE Data Compression Conference (DCC) 2024/2026</li>
+        <li>IEEE International Conference on Multimedia and Expo (ICME) 2023/2025</li>
+        <li>ACM Multimedia (MM) 2024</li>
+        <li>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) 2025</li>
+        <li>International Joint Conference on Neural Networks (IJCNN) 2025</li>
+      </ul>
+
+      <h3>Teaching</h3>
+      <ul>
+        <li>Teaching Assistant / Tutor at CityUHK (2021~2025): CS1102, CS5187, CS4186, CS2313</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<div class="footer">
+  &copy; <span class="author-name">Bolin Chen</span> &nbsp;|&nbsp; Last updated: Aug. 2026
+</div>
+
+<script src="assets/js/main.js?v=20260817"></script>
+</body>
+</html>

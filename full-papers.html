@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Paper List — Bolin Chen</title>
+  <script>
+    (function () {
+      var t;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20260817">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <filter id="sketchy" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="turbulence" baseFrequency="0.035 0.042" numOctaves="4" result="noise" seed="42"></feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    </filter>
+    <filter id="sketchy-sm" x="-18%" y="-18%" width="136%" height="136%">
+      <feTurbulence type="turbulence" baseFrequency="0.06" numOctaves="3" result="noise" seed="7"></feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+    </filter>
+  </defs>
+</svg>
+
+<nav class="topnav">
+  <a href="index.html" class="nav-name">Bolin Chen</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#research">Research</a>
+  <a href="index.html#publications">Publications</a>
+  <a href="index.html#experience">Experience</a>
+  <a href="index.html#education">Education</a>
+  <a href="index.html#service">Service</a>
+
+  <label class="theme-switch" title="Toggle light / dark">
+    <input class="theme-switch__checkbox" type="checkbox" aria-label="Toggle dark mode" />
+    <div class="theme-switch__container">
+      <div class="theme-switch__clouds"></div>
+      <div class="theme-switch__stars-container">
+        <svg fill="none" viewBox="0 0 144 55" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" clip-rule="evenodd" fill-rule="evenodd"></path>
+        </svg>
+      </div>
+      <div class="theme-switch__circle-container">
+        <div class="theme-switch__sun-moon-container">
+          <div class="theme-switch__moon">
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+            <div class="theme-switch__spot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="theme-switch__shooting-star"></div>
+      <div class="theme-switch__shooting-star-2"></div>
+      <div class="theme-switch__meteor"></div>
+      <div class="theme-switch__stars-cluster">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+      <div class="theme-switch__aurora"></div>
+      <div class="theme-switch__comets">
+        <div class="comet"></div>
+        <div class="comet"></div>
+      </div>
+    </div>
+  </label>
+</nav>
+
+<section class="page-header">
+  <h1>Full Paper List</h1>
+  <p class="back-link"><a href="index.html#publications">← Back to Publications</a></p>
+</section>
+
+<section id="full-papers">
+  <p style="color:var(--text-muted); font-size:0.9em;">
+    Full list of all peer-reviewed papers sorted by year (newest first). <b>C</b> = Conference, <b>J</b> = Journal.
+    Click titles to search on Google Scholar.
+  </p>
+
+  <h3>Pre-prints</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">P1</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Pleno-Generation%3A%20A%20Scalable%20Generative%20Face%20Video%20Compression%20Framework%20with%20Bandwidth%20Intelligence">Pleno-Generation: A Scalable Generative Face Video Compression Framework with Bandwidth Intelligence</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, H. Zhu, S. Yin, L. Zhu, J. Chen, R.L. Liao, S. Wang, Y. Ye. <span class="pub-venue">Under review</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">P2</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Models%20at%20the%20Frontier%20of%20Compression%3A%20A%20Survey%20on%20Generative%20Face%20Video%20Coding">Generative Models at the Frontier of Compression: A Survey on Generative Face Video Coding</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, S. Yin, G. Konuko, G. Valenzise, Z. Zhang, S. Wang, Y. Ye. <span class="pub-venue">Under review</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">P3</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Leveraging%20Diffusion%20Knowledge%20for%20Generative%20Image%20Compression%20with%20Fractal%20Frequency-Aware%20Band%20Learning">Leveraging Diffusion Knowledge for Generative Image Compression with Fractal Frequency-Aware Band Learning</a>
+      <span class="pub-authors">L. Zhu, X. Zeng, <span class="author-self">B. Chen</span>, P. Chen, Y.H. Li, S. Wang. <span class="pub-venue">Under review</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">P4</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=A%20Lightweight%20Dual-Mode%20Optimization%20for%20Generative%20Face%20Video%20Coding">A Lightweight Dual-Mode Optimization for Generative Face Video Coding</a>
+      <span class="pub-authors">Z. Zhang, S. Yin, <span class="author-self">B. Chen</span>, R.L. Liao, S. Wang, Y. Ye. <span class="pub-venue">Under review</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">P5</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=AgenticIQA%3A%20An%20Agentic%20Framework%20for%20Adaptive%20and%20Interpretable%20Image%20Quality%20Assessment">AgenticIQA: An Agentic Framework for Adaptive and Interpretable Image Quality Assessment</a>
+      <span class="pub-authors">H. Zhu, Y. Tian, K. Ding, B. Chen, <span class="author-self">B. Chen</span>, S. Wang, W. Lin. <span class="pub-venue">Under review</span></span>
+    </li>
+  </ul>
+
+  <h3>2026</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J13</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Standardizing%20Generative%20Face%20Video%20Compression%20using%20Supplemental%20Enhancement%20Information">Standardizing Generative Face Video Compression using Supplemental Enhancement Information</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, Y. Ye, J. Chen, R.L. Liao, S. Yin, S. Wang, K. Yang, Y. Li, Y. Xu, Y.-K. Wang, S. Gehlot, G.M. Su, P. Yin, S. McCarthy, G.J. Sullivan. <span class="pub-venue">IEEE Transactions on Multimedia</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J14</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=FTGID%3A%20Fine-grained%20Text-driven%20Framework%20for%20Universal%20Generative%20Image%20Detection">FTGID: Fine-grained Text-driven Framework for Universal Generative Image Detection</a>
+      <span class="pub-authors">Z. Huang, L. Lin, <span class="author-self">B. Chen</span>, Y. Wang, T. Zhao. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J15</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=CoFaCo%3A%20Controllable%20Generative%20Talking%20Face%20Video%20Coding">CoFaCo: Controllable Generative Talking Face Video Coding</a>
+      <span class="pub-authors">X. Li, X. Sheng, M. Wang, F.Z. Ou, <span class="author-self">B. Chen</span>, S. Wang, S. Kwong. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C17</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Sparse2Dense%3A%20A%20Keypoint-driven%20Generative%20Framework%20for%20Human%20Video%20Compression%20and%20Vertex%20Prediction">Sparse2Dense: A Keypoint-driven Generative Framework for Human Video Compression and Vertex Prediction</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, R.L. Liao, Y. Ye, J. Chen, S. Yin, X. Ju, S. Wang, Y. Fan. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C18</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Towards%20Efficient%203D%20Gaussian%20Human%20Avatar%20Compression%3A%20A%20Prior-Guided%20Framework">Towards Efficient 3D Gaussian Human Avatar Compression: A Prior-Guided Framework</a>
+      <span class="pub-authors">S. Yin, <span class="author-self">B. Chen</span>, X. Wu, R.L. Liao, J. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C19</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compressing%20Feed-Forward%203D%20Gaussian%20Splatting%20via%20Feature%20Sorting">Compressing Feed-Forward 3D Gaussian Splatting via Feature Sorting</a>
+      <span class="pub-authors">X. Ju, S. Yin, X. Wu, <span class="author-self">B. Chen</span>, R.L. Liao, S. Wang, Y. Ye. <span class="pub-venue">IEEE International Conference on Image Processing (ICIP)</span> <span class="badge badge-ccfc">CCF-C</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C20</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Improving%20Gaze%20Fidelity%20in%20Generative%20Face%20Video%20Coding%20with%20Pupil%20Position%20Signaling">Improving Gaze Fidelity in Generative Face Video Coding with Pupil Position Signaling</a>
+      <span class="pub-authors">A. Trioux, F. Ma, S. Yin, <span class="author-self">B. Chen</span>, J. Chen, S. Wang, Y. Ye, G. Valenzise, F. Yang. <span class="pub-venue">IEEE International Conference on Multimedia &amp; Expo (ICME)</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C21</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Occupancy-Map%E2%80%93Aware%20Metrics%20for%203D%20Gaussian%20Splatting%3A%20Toward%20More%20Reliable%20Objective%20Quality%20Evaluation">Occupancy-Map–Aware Metrics for 3D Gaussian Splatting: Toward More Reliable Objective Quality Evaluation</a>
+      <span class="pub-authors">A. Trioux, W. Wu, S. Yin, <span class="author-self">B. Chen</span>, R.L. Liao, S. Wang, Y. Ye, F. Yang. <span class="pub-venue">IEEE International Conference on Multimedia &amp; Expo (ICME)</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+  </ul>
+
+  <h3>2025</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J9</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Interactive%20Face%20Video%20Coding%3A%20A%20Generative%20Compression%20Framework">Interactive Face Video Coding: A Generative Compression Framework</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, S. Wang, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J10</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compressed%20Video%20Quality%20Assessment%20with%20Fine-Grained%20Artifact%20Perception%20and%20Evaluation">Compressed Video Quality Assessment with Fine-Grained Artifact Perception and Evaluation</a>
+      <span class="pub-authors">L. Lin, Y. Zhang, <span class="author-self">B. Chen</span>, J. Yang, T. Zhao. <span class="pub-venue">IEEE Transactions on Multimedia</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J11</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=ColorAssist%3A%20Perception-Based%20Recoloring%20for%20Color%20Vision%20Deficiency%20Compensation">ColorAssist: Perception-Based Recoloring for Color Vision Deficiency Compensation</a>
+      <span class="pub-authors">L. Lin, S Xie, Y. Wang, <span class="author-self">B. Chen</span>, Y. Xue, X Zhuang, T. Zhao. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J12</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Human%20Video%20Compression%20with%20Multi-granularity%20Temporal%20Trajectory%20Factorization">Generative Human Video Compression with Multi-granularity Temporal Trajectory Factorization</a>
+      <span class="pub-authors">S. Yin, <span class="author-self">B. Chen</span>, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C13</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Rethinking%20Generative%20Human%20Video%20Coding%20with%20Implicit%20Motion%20Transformation">Rethinking Generative Human Video Coding with Implicit Motion Transformation</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, R.L. Liao, J. Chen, Y. Ye. <span class="pub-venue">IEEE Picture Coding Symposium (PCS)</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C14</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compressing%20Human%20Body%20Video%20with%20Interactive%20Semantics%3A%20A%20Generative%20Approach">Compressing Human Body Video with Interactive Semantics: A Generative Approach</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, S. Yin, H. Zhu, L. Zhu, Z. Zhang, J. Chen, R.L. Liao, S. Wang, Y. Ye. <span class="pub-venue">IEEE International Conference on Image Processing (ICIP)</span> <span class="badge badge-ccfc">CCF-C</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C15</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Beyond%20GFVC%3A%20A%20Progressive%20Face%20Video%20Compression%20Framework%20with%20Adaptive%20Visual%20Tokens">Beyond GFVC: A Progressive Face Video Compression Framework with Adaptive Visual Tokens</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, S. Yin, Z. Zhang, J. Chen, R.L. Liao, L. Zhu, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C16</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compressing%20Scene%20Dynamics%3A%20A%20Generative%20Approach">Compressing Scene Dynamics: A Generative Approach</a>
+      <span class="pub-authors">S. Yin, Z. Zhang, <span class="author-self">B. Chen</span>, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+  </ul>
+
+  <h3>2024</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J6</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Ultra-Low%20Bitrate%20Face%20Video%20Compression%20Based%20on%20Conversions%20from%203D%20Keypoints%20to%202D%20Motion%20Map">Ultra-Low Bitrate Face Video Compression Based on Conversions from 3D Keypoints to 2D Motion Map</a>
+      <span class="pub-authors">Z. Wang, <span class="author-self">B. Chen</span>, S. Wang, S. Wang, Y. Ye, S Ma. <span class="pub-venue">IEEE Transactions on Image Processing</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J7</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Perceptual%20Quality%20Assessment%20of%20Face%20Video%20Compression%3A%20A%20Benchmark%20and%20An%20Effective%20Method">Perceptual Quality Assessment of Face Video Compression: A Benchmark and An Effective Method</a>
+      <span class="pub-authors">Y. Li, <span class="author-self">B. Chen</span>, B. Chen, M. Wang, S. Wang, W. Lin. <span class="pub-venue">IEEE Transactions on Multimedia</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J8</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Semantic%20Face%20Compression%20for%20Metaverse%3A%20A%20Compact%203D%20Descriptor%20Based%20Approach">Semantic Face Compression for Metaverse: A Compact 3D Descriptor Based Approach</a>
+      <span class="pub-authors">B. Li, <span class="author-self">B. Chen</span>, Z. Wang, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C7</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Face%20Video%20Coding%20Techniques%20and%20Standardization%20Efforts%3A%20A%20Review">Generative Face Video Coding Techniques and Standardization Efforts: A Review</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, J. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral, Capocelli Prize finalist</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C8</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Generative%20Visual%20Compression%3A%20A%20Review">Generative Visual Compression: A Review</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, S. Yin, P. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE International Conference on Image Processing (ICIP)</span> <span class="badge badge-ccfc">CCF-C</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C9</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Enabling%20Translatability%20of%20Generative%20Face%20Video%20Coding%3A%20A%20Unified%20Face%20Feature%20Transcoding%20Framework">Enabling Translatability of Generative Face Video Coding: A Unified Face Feature Transcoding Framework</a>
+      <span class="pub-authors">S. Yin, <span class="author-self">B. Chen</span>, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral, Capocelli Prize finalist</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C10</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Towards%20Ultra%20Low%20Bit-Rate%20Digital%20Human%20Character%20Communication%20via%20Compact%203D%20Face%20Descriptors">Towards Ultra Low Bit-Rate Digital Human Character Communication via Compact 3D Face Descriptors</a>
+      <span class="pub-authors">B. Li, <span class="author-self">B. Chen</span>, Z. Wang, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C11</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Light-weighted%20Temporal%20Evolution%20Inference%20for%20Generative%20Face%20Video%20Compression">Light-weighted Temporal Evolution Inference for Generative Face Video Compression</a>
+      <span class="pub-authors">Z. Zhang, <span class="author-self">B. Chen</span>, S. Yin, S. Wang, Y. Ye. <span class="pub-venue">IEEE International Workshop on Multimedia Signal Processing (MMSP)</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C12</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Enhanced%20Multi-Resolution%20Generative%20Face%20Video%20Compression">Enhanced Multi-Resolution Generative Face Video Compression</a>
+      <span class="pub-authors">R Zhou, R.L. Liao, <span class="author-self">B. Chen</span>, Y. Ye, J. Chen. <span class="pub-venue">IEEE International Workshop on Multimedia Signal Processing (MMSP)</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+  </ul>
+
+  <h3>2023</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J4</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Compact%20Temporal%20Trajectory%20Representation%20for%20Talking%20Face%20Video%20Compression">Compact Temporal Trajectory Representation for Talking Face Video Compression</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">J5</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Quality%20Harmonization%20for%20Virtual%20Composition%20in%20Online%20Video%20Communications">Quality Harmonization for Virtual Composition in Online Video Communications</a>
+      <span class="pub-authors">B. Li, <span class="author-self">B. Chen</span>, Z. Wang, B. Chen, S. Wang, Y. Ye. <span class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology</span> <span class="badge badge-ccfb">CCF-B</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C4</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=ELFIC%3A%20A%20Learning-based%20Flexible%20Image%20Codec%20with%20Rate%20Distortion-Complexity%20Optimization">ELFIC: A Learning-based Flexible Image Codec with Rate Distortion-Complexity Optimization</a>
+      <span class="pub-authors">Z. Zhang, <span class="author-self">B. Chen</span>, H Lin, J Lin, X Wang, T. Zhao. <span class="pub-venue">ACM International Conference on Multimedia (ACM MM)</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C5</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=DeepSVC%3A%20Deep%20Scalable%20Video%20Coding%20for%20Both%20Machine%20and%20Human%20Vision">DeepSVC: Deep Scalable Video Coding for Both Machine and Human Vision</a>
+      <span class="pub-authors">H Lin, <span class="author-self">B. Chen</span>, Z. Zhang, J Lin, X Wang, T. Zhao. <span class="pub-venue">ACM International Conference on Multimedia (ACM MM)</span> <span class="badge badge-ccfa">CCF-A</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C6</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Visual%20Data%20Compression%20for%20Metaverse%3A%20Technology%2C%20Standard%2C%20and%20Challenges">Visual Data Compression for Metaverse: Technology, Standard, and Challenges</a>
+      <span class="pub-authors">P. Chen, <span class="author-self">B. Chen</span>, M. Wang, S. Wang, Z Li. <span class="pub-venue">IEEE International Conference on Metaverse Computing, Networking and Applications (MetaCom)</span></span>
+    </li>
+  </ul>
+
+  <h3>2022</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J3</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=An%20Optimized%20Segmentation%20Scheme%20for%20Ambiguous%20Pixels%20Based%20on%20Improved%20FCN%20and%20DenseNet">An Optimized Segmentation Scheme for Ambiguous Pixels Based on Improved FCN and DenseNet</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, T. Zhao, L Zhou, J. Yang, J Liu, L. Lin. <span class="pub-venue">Circuits, Systems, and Signal Processing</span> <span class="badge badge-sci">SCI</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C2</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Beyond%20keypoint%20coding%3A%20Temporal%20evolution%20inference%20with%20compact%20feature%20representation%20for%20talking%20face%20video%20compression">Beyond keypoint coding: Temporal evolution inference with compact feature representation for talking face video compression</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, Z. Wang, B. Li, R Lin, S. Wang, Y. Ye. <span class="pub-venue">IEEE Data Compression Conference (DCC)</span> <span class="badge badge-ccfb">CCF-B</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+    <li class="pub-item">
+      <span class="pub-tag">C3</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Dynamic%20multi-reference%20generative%20prediction%20for%20face%20video%20compression">Dynamic multi-reference generative prediction for face video compression</a>
+      <span class="pub-authors">Z. Wang, <span class="author-self">B. Chen</span>, Y. Ye, S. Wang. <span class="pub-venue">IEEE International Conference on Image Processing (ICIP)</span> <span class="badge badge-ccfc">CCF-C</span> <span class="badge badge-first">Oral</span></span>
+    </li>
+  </ul>
+
+  <h3>2021</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J2</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Multipath%20feature%20recalibration%20DenseNet%20for%20image%20classification">Multipath feature recalibration DenseNet for image classification</a>
+      <span class="pub-authors"><span class="author-self">B. Chen</span>, T. Zhao, J Liu, L. Lin. <span class="pub-venue">International Journal of Machine Learning and Cybernetics</span> <span class="badge badge-sci">SCI</span></span>
+    </li>
+  </ul>
+
+  <h3>2019</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">C1</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Hevc%20compression%20artifact%20reduction%20with%20generative%20adversarial%20networks">Hevc compression artifact reduction with generative adversarial networks</a>
+      <span class="pub-authors">S. Yu, <span class="author-self">B. Chen</span>, Y. Xu, W Chen, Z Chen, T. Zhao. <span class="pub-venue">IEEE International Conference on Wireless Communications and Signal Processing (WCSP)</span></span>
+    </li>
+  </ul>
+
+  <h3>2018</h3>
+  <ul class="pub-list">
+    <li class="pub-item">
+      <span class="pub-tag">J1</span>
+      <a class="pub-title" target="_blank" href="https://scholar.google.com/scholar?q=Leukocyte%20recognition%20with%20convolutional%20neural%20network">Leukocyte recognition with convolutional neural network</a>
+      <span class="pub-authors">L. Lin, W. Wang, <span class="author-self">B. Chen</span>. <span class="pub-venue">Journal of Algorithms &amp; Computational Technology</span> <span class="badge badge-sci">SCIE</span></span>
+    </li>
+  </ul>
+</section>
+
+<div class="footer">
+  &copy; <span class="author-name">Bolin Chen</span> &nbsp;|&nbsp; Last updated: Aug. 2026
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
